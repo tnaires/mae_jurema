@@ -1,0 +1,5 @@
+<h3>A pessoa que você pensou é: </h3>
+<h1><%= @pessoa.nome %></h1>
+<%= image_tag(@pessoa.foto_url) if @pessoa.foto.present? %>
+<br />
+<%= link_to 'Começar de novo', root_path %>

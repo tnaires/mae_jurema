@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @pessoa.nome %>
+</p>
+
+<p>
+  <b>Foto:</b>
+  <%= image_tag(@pessoa.foto_url, :width => 600) if @pessoa.foto.present? %>
+</p>
+
+<p>
+  <b>Caracteristicas:</b>
+  <%= @pessoa.caracteristicas %>
+</p>
+
+
+<%= link_to 'Edit', edit_pessoa_path(@pessoa) %> |
+<%= link_to 'Back', pessoas_path %>
